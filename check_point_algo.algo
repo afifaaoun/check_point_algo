@@ -7,17 +7,17 @@ ALGORITHM sentence_count
 VAR 
 i        : INTEGER;
 VOYELS   : INTEGER:= 0;
-chara    : INTEGER:= 0 ;
-length   : INTEGER:= 0;
+chara    : INTEGER:= 0;
+long     : INTEGER:= 0;
 sentence : " this is my first algorithm";
 
 BEGIN
 Read(sentence);
-Write(sentence[length]); 
-IF (sentence[length] =0) THEN
+IF (sentence[sentence.length] =.) THEN
    sentence.split("");
    FOR i FROM 0 TO sentence.length STEP step  DO
-      IF (sentence[i] ="") THEN
+   long= i;
+      IF (sentence[i] =' ') THEN
          chara = chara+1;   
       END_IF
       IF ((sentence[i] = "A") OR (sentence[i] = "O") OR(sentence[i] = "U") OR (sentence[i] = "E")
@@ -25,7 +25,7 @@ IF (sentence[length] =0) THEN
          VOYELS = VOYELS+1;      
       END_IF
    END_FOR
-Write(length); 
+Write(long); 
 Write(chara);
 Write(VOYELS);   
 END_IF

@@ -9,7 +9,7 @@ i        : INTEGER;
 VOYELS   : INTEGER:= 0;
 chara    : INTEGER:= 0;
 long     : INTEGER:= 0;
-sentence : " this is my first algorithm";
+sentence = " this is my first algorithm";
 
 BEGIN
 Read(sentence);

@@ -7,7 +7,7 @@ ALGORITHM sentence_count
 VAR 
 i        : INTEGER;
 VOYELS   : INTEGER:= 0;
-chara    : INTEGER:= 0;
+chara    : INTEGER:= 1;
 sentence : 'STRING';
 
 BEGIN

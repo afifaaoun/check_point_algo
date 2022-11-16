@@ -12,21 +12,21 @@ long     : INTEGER:= 0;
 sentence = " this is my first algorithm";
 
 BEGIN
-Read(sentence);
-IF (sentence[sentence.length] =".") THEN
-   sentence.split(" ");
-   FOR i FROM 0 TO sentence.length STEP step  DO
-   long= i;
-      IF (sentence[i] =' ') THEN
-         chara = chara+1;   
-      END_IF
-      IF ((sentence[i] = "A") OR (sentence[i] = "O") OR(sentence[i] = "U") OR (sentence[i] = "E")
-            OR(sentence[i] = "I") OR(sentence[i] = "Y") ) THEN
-         VOYELS = VOYELS+1;      
-      END_IF
-   END_FOR
-Write(long); 
-Write(chara);
-Write(VOYELS);   
-END_IF
+   Read(sentence);
+   IF (sentence[sentence.length] =".") THEN
+      sentence.split(" ");
+      FOR i FROM 0 TO sentence.length STEP step  DO
+         long= i;
+            IF (sentence[i] =' ') THEN
+               chara = chara+1;   
+            END_IF
+            IF ((sentence[i] = "A") OR (sentence[i] = "O") OR(sentence[i] = "U") OR (sentence[i] = "E")
+               OR(sentence[i] = "I") OR(sentence[i] = "Y") ) THEN
+               VOYELS = VOYELS+1;      
+            END_IF
+      END_FOR
+      Write(long); 
+      Write(chara);
+      Write(VOYELS);   
+   END_IF
 END

@@ -1,0 +1,30 @@
+// Instructions
+// The length of the sentence (the number of characters).
+// The number of words in the sentence (assuming that the words are separated by a single space).
+// The number of vowels in the sentence.
+
+ALGORITHM sentence_count
+VAR 
+i        : INTEGER;
+VOYELS   : INTEGER:= 0;
+chara    : INTEGER:= 0;
+sentence : 'STRING';
+
+BEGIN
+Read(sentence);
+Write(sentence[length]); 
+IF (sentence[length] =0) THEN
+   sentence.split("");
+   FOR i FROM 0 TO sentence.length STEP step  DO
+      IF (sentence[i] ="") THEN
+         chara = chara+1;   
+      END_IF
+      IF ((sentence[i] = "A") OR (sentence[i] = "O") OR(sentence[i] = "U") OR (sentence[i] = "E")
+            OR(sentence[i] = "I") OR(sentence[i] = "Y") ) THEN
+         VOYELS = VOYELS+1;      
+      END_IF
+   END_FOR
+Write(chara);
+Write(VOYELS);   
+END_IF
+END

@@ -13,8 +13,8 @@ sentence = " this is my first algorithm";
 
 BEGIN
 Read(sentence);
-IF (sentence[sentence.length] =.) THEN
-   sentence.split("");
+IF (sentence[sentence.length] =".") THEN
+   sentence.split(" ");
    FOR i FROM 0 TO sentence.length STEP step  DO
    long= i;
       IF (sentence[i] =' ') THEN
